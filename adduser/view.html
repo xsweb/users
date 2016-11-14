@@ -1,0 +1,78 @@
+<form role="form" class="form-horizontal" novalidate="novalidate" ng-app="myApp">
+<div class="form-group" ng-hide="!subMitMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: green;">{{subMitMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="username">用户名</label>
+<div class="col-sm-2">
+<input type="text" class="form-control" id="username"
+ng-model="username" required ng-minlength="6"  placeholder="请输入用户名">
+
+</div>
+</div>
+<div class="form-group" ng-hide="!usernameMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{usernameMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="password">密码</label>
+<div class="col-sm-2">
+<input type="password" class="form-control" id="password" ng-model="password" placeholder="请输入密码">
+</div>
+</div>
+<div class="form-group" ng-hide="!passwordMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{passwordMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="email">邮箱</label>
+<div class="col-sm-2">
+<input type="email" class="form-control" id="email" ng-model="email" placeholder="请输入邮箱">
+</div>
+</div>
+<div class="form-group" ng-hide="!emailMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{emailMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="tel">电话号码</label>
+<div class="col-sm-2">
+<input type="text" class="form-control" id="tel" ng-model="tel"
+placeholder="请输入您的电话号码">
+</div>
+</div>
+<div class="form-group" ng-hide="!telMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{telMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="website">网站</label>
+<div class="col-sm-2">
+<input type="text" class="form-control" id="website" ng-model="website"
+placeholder="请输入您的电话号码">
+</div>
+</div>
+<div class="form-group" ng-hide="!websiteMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{websiteMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="identity-card">身份证号码</label>
+<div class="col-sm-2">
+<input type="text" class="form-control" id="identity-card" ng-model="identityCard" placeholder="请输入您的身份证号码">
+</div>
+</div>
+<div class="form-group" ng-hide="!identityCardMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{identityCardMsg}}</div>
+</div>
+<div class="form-group">
+<label class="col-sm-2 control-label" for="birthday">生日</label>
+<div class="col-sm-2">
+<input type="text" class="form-control" id="birthday" ng-model="birthday"
+placeholder="请输入您的电话号码">
+</div>
+</div>
+<div class="form-group" ng-hide="!birthdayMsg">
+<div class="col-sm-2 col-sm-offset-2" style="color: red;">{{birthdayMsg}}</div>
+</div>
+
+</div>
+<div class="col-sm-2 col-sm-offset-2">
+<button type="button" class="btn-info btn-lg" ng-click="dssdsdds()">提交</button>
+</div>
+</form>
